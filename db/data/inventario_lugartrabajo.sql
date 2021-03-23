@@ -1,0 +1,56 @@
+-- MySQL dump 10.13  Distrib 8.0.21, for Win64 (x86_64)
+--
+-- Host: localhost    Database: inventario
+-- ------------------------------------------------------
+-- Server version	5.7.26
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `lugartrabajo`
+--
+
+DROP TABLE IF EXISTS `lugartrabajo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `lugartrabajo` (
+  `idLugarTrabajo` int(11) NOT NULL AUTO_INCREMENT,
+  `idDepartamentos` int(11) DEFAULT NULL,
+  `idSucursales` int(11) DEFAULT NULL,
+  PRIMARY KEY (`idLugarTrabajo`),
+  KEY `fk_tipousuario_departamentos1_idx` (`idDepartamentos`),
+  KEY `fk_tipousuario_sucursales1_idx` (`idSucursales`),
+  CONSTRAINT `fk_tipousuario_departamentos1` FOREIGN KEY (`idDepartamentos`) REFERENCES `departamentos` (`idDepartamentos`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_tipousuario_sucursales1` FOREIGN KEY (`idSucursales`) REFERENCES `sucursales` (`idSucursales`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=75 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `lugartrabajo`
+--
+
+LOCK TABLES `lugartrabajo` WRITE;
+/*!40000 ALTER TABLE `lugartrabajo` DISABLE KEYS */;
+INSERT INTO `lugartrabajo` VALUES (1,NULL,1),(2,NULL,2),(3,NULL,3),(4,NULL,4),(5,NULL,5),(6,NULL,6),(7,NULL,7),(8,NULL,8),(9,NULL,9),(10,NULL,10),(11,NULL,11),(12,NULL,12),(13,NULL,13),(14,NULL,14),(15,NULL,15),(16,NULL,16),(17,NULL,17),(18,NULL,18),(19,NULL,19),(20,NULL,20),(21,NULL,21),(22,NULL,22),(23,NULL,23),(24,NULL,24),(25,NULL,25),(26,NULL,26),(27,NULL,27),(28,NULL,28),(29,NULL,29),(30,NULL,30),(31,NULL,31),(32,NULL,32),(33,NULL,33),(34,NULL,34),(35,NULL,35),(36,NULL,36),(37,NULL,37),(38,NULL,38),(39,NULL,39),(40,NULL,40),(41,NULL,41),(42,NULL,42),(43,NULL,43),(44,NULL,44),(45,NULL,45),(46,NULL,46),(47,NULL,47),(48,NULL,48),(49,NULL,49),(50,NULL,50),(51,NULL,51),(52,NULL,52),(53,NULL,53),(54,NULL,54),(55,NULL,55),(56,NULL,56),(57,NULL,57),(58,1,NULL),(59,2,NULL),(60,3,NULL),(61,4,NULL),(62,5,NULL),(63,6,NULL),(64,7,NULL),(65,8,NULL),(66,9,NULL),(67,10,NULL),(68,11,NULL),(69,12,NULL),(70,13,NULL),(71,14,NULL),(72,15,NULL),(73,16,NULL),(74,17,NULL);
+/*!40000 ALTER TABLE `lugartrabajo` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2020-11-30  6:59:24

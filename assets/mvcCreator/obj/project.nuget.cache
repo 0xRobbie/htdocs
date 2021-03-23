@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "amLrAXPimkt7KojS0Ef6M+V/XUwwZdtyk1gvpukEVcwhVz3yofB0GQG78Vi1fU7ezLu9JxYit0tdPoZy6cWsUg==",
+  "success": true,
+  "projectFilePath": "C:\\xampp\\htdocs\\assets\\mvcCreator\\csharp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Citlalic.EQUIPO63\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Citlalic.EQUIPO63\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
