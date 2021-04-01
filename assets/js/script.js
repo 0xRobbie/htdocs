@@ -22,13 +22,9 @@ function accesos() {
 }
 
 function myFunction() {
-  table1 = document.getElementById("myTable1");
-  table2 = document.getElementById("myTable2");
   table3 = document.getElementById("myTable3");
   table4 = document.getElementById("myTable4");
 
-  multiTable(table1);
-  multiTable(table2);
   multiTable(table3);
   multiTable(table4);
 }

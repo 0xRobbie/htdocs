@@ -146,7 +146,7 @@
                             'proveedores' => ['verProveedores', 'crearProveedores', 'actualizarProveedores', 'actualizar', 'formularioProveedores'],
                             'solicitudFactura' => ['verSolicitudFactura', 'formularioSolicitudFactura'],
                             'cotizacion' => ['vercotizacion', 'crearcotizacion', 'actualizarcotizacion', 'actualizar', 'formulariocotizacion'],
-                            'soporte' => ['calculosRapidos','promociones']
+                            'soporte' => ['calculosRapidos','promociones','hojasTecnicas']
                         );
 
     if (array_key_exists($controller, $controllers)) {

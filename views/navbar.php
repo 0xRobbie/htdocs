@@ -85,8 +85,8 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="?controller=soporte&action=calculosRapidos">Cálculos Rápidos</a>
                   <a class="dropdown-item" href="?controller=soporte&action=promociones">Promociones</a>
-                  <!-- <a class="dropdown-item" href="?controller=soporte&action=verInventarioSucursales">Inventario Sucursales</a>
-                  <a class="dropdown-item" href="?controller=soporte&action=verFolios">Ver Folios</a> -->
+                  <a class="dropdown-item" href="?controller=soporte&action=hojasTecnicas">Hojas Técnicas</a>
+                  <!-- <a class="dropdown-item" href="?controller=soporte&action=verFolios">Ver Folios</a> -->
                 </div>
               </li>
               
