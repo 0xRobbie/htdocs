@@ -120,7 +120,7 @@
     }
 
     $controllers = array(   'acceso' => ['index', 'error', 'login', 'logout', 'menuSistemas', 'menuSucursales'] ,
-                            'accesos' => ['verAccesos'] ,
+                            'accesos' => ['verCorreo', 'verEquipos', 'verProscai', 'verSkype'] ,
                             'usuarios' => ['verUsuarios', 'crearUsuarios', 'actualizarUsuarios', 'actualizar', 'formularioUsuarios', 'borrarUsuarios'],
                             'papeleria' => ['verPapeleria', 'crearPapeleria', 'actualizarPapeleria', 'formularioPapeleria', 'actualizar', 'borrarPapeleria'],
                             'folios' => ['verFolios', 'crearFolios', 'actualizarFolios', 'actualizar', 'formularioFolios'],

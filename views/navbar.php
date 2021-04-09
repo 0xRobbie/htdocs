@@ -95,7 +95,10 @@
                   Accesos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="?controller=accesos&action=verAccesos">Ver Accesos</a>
+                  <a class="dropdown-item" href="?controller=accesos&action=verProscai">Proscai</a>
+                  <a class="dropdown-item" href="?controller=accesos&action=verCorreo">Correo</a>
+                  <a class="dropdown-item" href="?controller=accesos&action=verSkype">Skype</a>
+                  <a class="dropdown-item" href="?controller=accesos&action=verEquipos">Equipos</a>
                   <!-- <a class="dropdown-item" href="?controller=servicio&action=verServicio">Admin servicios</a> -->
                 </div>
               </li>
