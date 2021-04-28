@@ -27,7 +27,9 @@
         { 
             $id = $_GET['idUsuarios'];
             $lugaresTrabajo = LugarTrabajo::verLugarTrabajo();
-            $usuario = Usuarios::searchByIdUsuarios($id); 
+            $usuario = Usuarios::searchByIdUsuarios($id);
+            $accesos = Accesos::verAccesosUsuario($id);
+            $telefonos = Telefonia::verTelefonoUsuario($id);
             require_once('views/usuarios/actualizarUsuarios.php'); 
         } 
  

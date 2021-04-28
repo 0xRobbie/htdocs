@@ -11,6 +11,36 @@
     <div class="row">
 
         <div class="col-4">
+                            
+            <h6 class="font-weight-bold">Temporadas</h6>
+            <div class="row">
+                <div class="col-4">
+                    <p><span class="font-weight-bold">7J: </span>18</p>
+                    <p><span class="font-weight-bold">7L: </span>19</p>
+                </div>
+                <div class="col-4">
+                    <p><span class="font-weight-bold">7N: </span>20</p>
+                    <p><span class="font-weight-bold">7O: </span>21</p>
+                </div>
+                <div class="col-4">
+                    <p><span class="font-weight-bold">7K: </span>BA</p>
+                </div>
+            </div>
+            <br>
+
+            <h6 class="font-weight-bold">Trajes 3 X $ 4,500</h6>
+            <p> Aplica en trajes con precio normal de etiqueta de $ 4,500. </p>
+            <p> Aplica en trajes de temporada 18 y 19. </p>
+            <p> Aplica en trajes de temporada 20, excepto los trajes de precio normal de etiqueta de $ 6,250 $ 6,500 y $ 7,500. </p>
+            <p> Aplica en trajes con precio de etiqueta amarilla de $ 1,500.</p>
+            
+            <h6 class="font-weight-bold">CAMISAS 2 X 600</h6>
+            <p> Aplica en camisas temporada básica con precio normal de etiqueta  $850, $975, $1000. </p>
+            <p> Aplica en camisas temporada 19, 20 y 21 con precio normal de etiqueta de $1000.</p>
+
+        </div>
+
+        <div class="col-4">
 
             <h3>Trajes 3x4500</h3>
             <!-- 
@@ -78,34 +108,6 @@
             </div> 
         </div>
 
-        <div class="col-4">
-                            
-            <h6 class="font-weight-bold">Temporadas</h6>
-            <div class="row">
-                <div class="col-4">
-                    <p><span class="font-weight-bold">7J: </span>18</p>
-                    <p><span class="font-weight-bold">7L: </span>19</p>
-                </div>
-                <div class="col-4">
-                    <p><span class="font-weight-bold">7N: </span>20</p>
-                    <p><span class="font-weight-bold">7O: </span>21</p>
-                </div>
-                <div class="col-4">
-                    <p><span class="font-weight-bold">7K: </span>BA</p>
-                </div>
-            </div>
-            <br>
 
-            <h6 class="font-weight-bold">Trajes 3 X $ 4,500</h6>
-            <p> Aplica en trajes con precio normal de etiqueta de $ 4,500. </p>
-            <p> Aplica en trajes de temporada 18 y 19. </p>
-            <p> Aplica en trajes de temporada 20, excepto los trajes de precio normal de etiqueta de $ 6,250 $ 6,500 y $ 7,500. </p>
-            <p> Aplica en trajes con precio de etiqueta amarilla de $ 1,500.</p>
-            
-            <h6 class="font-weight-bold">CAMISAS 2 X 600</h6>
-            <p> Aplica en camisas temporada básica con precio normal de etiqueta  $850, $975, $1000. </p>
-            <p> Aplica en camisas temporada 19, 20 y 21 con precio normal de etiqueta de $1000.</p>
-
-        </div>
 
     </div>

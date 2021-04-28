@@ -5,7 +5,7 @@
         <h2> Log in</h2>
         <br>
 
-        <form name="login" action="?controller=acceso&&action=login" onsubmit="validarLogin()" method="POST">
+        <form name="login" action="?controller=accesos&&action=login" onsubmit="validarLogin()" method="POST">
             <div class="form-group">
                 <label for="usuarios">Usuario</label>
                 <input type="text" class="form-control" id="usuarios" name="usuarios" placeholder="Nombre de usuario" required>

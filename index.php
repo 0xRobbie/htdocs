@@ -6,7 +6,7 @@
         $controller = $_GET['controller'];
         $action = $_GET['action'];
     } else {
-        $controller = 'acceso';
+        $controller = 'accesos';
         $action = 'index';
     }
 

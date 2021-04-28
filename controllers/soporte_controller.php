@@ -17,5 +17,10 @@
         {
             include_once ('views/soporte/hojasTecnicas.php');
         }
+     
+        public function documentos()
+        {
+            include_once ('views/soporte/documentos.php');
+        }
     }
 ?>

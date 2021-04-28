@@ -3,14 +3,10 @@
         require_once('controllers/' . $controller . '_controller.php');
 
         switch($controller) {
-            case 'acceso':
-                include_once ('models/acceso.php');
+            case 'accesos':
                 include_once ('models/usuarios.php');
                 include_once ('models/sucursales.php');
                 include_once ('models/inventario.php');
-                $controller = new AccesoController();
-            break;
-            case 'accesos':
                 include_once ('models/accesos.php');
                 $controller = new AccesosController();
             break;
@@ -47,6 +43,8 @@
             case 'usuarios':
                 include_once ('models/usuarios.php');
                 include_once ('models/lugarTrabajo.php');
+                include_once ('models/accesos.php');
+                include_once ('models/telefonia.php');
                 $controller = new UsuariosController();
             break;
             case 'tipoPapeleria':
@@ -114,16 +112,22 @@
                 include_once ('models/cotizacion.php');
                 $controller = new CotizacionFacturaController();
             break;
+            case 'telefonia':
+                include_once ('models/telefonia.php');
+                $controller = new TelefoniaController();
+            break;
         }
 
         $controller->{ $action }();
     }
 
-    $controllers = array(   'acceso' => ['index', 'error', 'login', 'logout', 'menuSistemas', 'menuSucursales'] ,
-                            'accesos' => ['verCorreo', 'verEquipos', 'verProscai', 'verSkype'] ,
+    $controllers = array(   //'acceso' => ['index', 'error', 'login', 'logout', 'menuSistemas', 'menuSucursales'] ,
+                            'accesos' => ['index', 'error', 'login', 'logout', 'menuSistemas', 'menuSucursales', 
+                                            'verAccesosCorreo', 'verAccesosServidorProscai', 'verAccesosProscai' , 'verAccesosProscaiSeguridad', 'verAccesosSkype'] ,
                             'usuarios' => ['verUsuarios', 'crearUsuarios', 'actualizarUsuarios', 'actualizar', 'formularioUsuarios', 'borrarUsuarios'],
                             'papeleria' => ['verPapeleria', 'crearPapeleria', 'actualizarPapeleria', 'formularioPapeleria', 'actualizar', 'borrarPapeleria'],
                             'folios' => ['verFolios', 'crearFolios', 'actualizarFolios', 'actualizar', 'formularioFolios'],
+                            'telefonia' => ['verTelefonia', 'crearTelefonia', 'actualizarTelefonia', 'actualizar', 'formularioTelefonia'],
                             'rastreo' => ['verRastreo', 'crearRastreo', 'actualizarRastreo', 'formularioRastreo'],
                             'tipoPapeleria' => ['verTipoPapeleria', 'crearTipoPapeleria', 'actualizarTipoPapeleria', 'formularioTipoPapeleria'],
                             'departamentos' => ['verDepartamentos', 'crearDepartamentos', 'actualizarDepartamentos', 'actualizar', 'formularioDepartamentos', 'borrarDepartamentos'],
@@ -146,7 +150,9 @@
                             'proveedores' => ['verProveedores', 'crearProveedores', 'actualizarProveedores', 'actualizar', 'formularioProveedores'],
                             'solicitudFactura' => ['verSolicitudFactura', 'formularioSolicitudFactura'],
                             'cotizacion' => ['vercotizacion', 'crearcotizacion', 'actualizarcotizacion', 'actualizar', 'formulariocotizacion'],
-                            'soporte' => ['calculosRapidos','promociones','hojasTecnicas']
+                            'soporte' => ['calculosRapidos','promociones','hojasTecnicas', 'documentos'],
+                            'productos' => ['verProductos','formularioProductos','actualizarProductos', 'actualizar', 'borrarProductos'],
+                            'tipoProducto' => ['verTipoProducto','formularioTipoProducto','actualizarTipoProducto', 'actualizar', 'borrarTipoProducto']
                         );
 
     if (array_key_exists($controller, $controllers)) {

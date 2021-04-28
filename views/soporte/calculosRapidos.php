@@ -20,6 +20,7 @@
                 </div>
 
                 <button type="button" onclick="calcular60()" class="btn btn-block btn-primary">60% descuento</button>
+                <button type="button" onclick="calcular70()" class="btn btn-block btn-primary">70% descuento</button>
             </form>
 
             <p id="desc1"></p>
@@ -60,6 +61,12 @@
         var precio = document.getElementById("precio").value;
         var res = r3precio(60, precio);
         document.getElementById("desc1").innerHTML = "-60% = " + res;
+    }
+
+    function calcular70() {
+        var precio = document.getElementById("precio").value;
+        var res = r3precio(70, precio);
+        document.getElementById("desc1").innerHTML = "-70% = " + res;
     }
 
     function tres4500() {

@@ -11,7 +11,6 @@
             <table id="myTable" class="table table-bordered table-hover"> 
                 <thead> 
                     <tr> 
-                        <th>id</th> 
                         <th>usuarios</th> 
                         <th>skype</th> 
                         <th>skypePass</th> 
@@ -21,10 +20,9 @@
                 <tbody> 
                     <?php foreach($accesos as $ver) { ?> 
                         <tr> 
-                            <td> <?php echo $ver['idAccesos'] ?> </td> 
+                            <td> <?php echo $ver['usuarios'] ?> </td> 
                             <td> <?php echo $ver['usuario'] ?> </td> 
-                            <td> <?php echo $ver['skype'] ?> </td> 
-                            <td> <?php echo $ver['skypePass'] ?> </td> 
+                            <td> <?php echo $ver['password'] ?> </td> 
                     <?php } ?> 
                         </tr> 
                 </tbody> 

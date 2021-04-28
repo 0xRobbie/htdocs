@@ -34,25 +34,13 @@
                                 FROM usuarios
                                 LEFT JOIN lugarTrabajo ON lugarTrabajo.idLugarTrabajo = usuarios.idLugarTrabajo
                                 LEFT JOIN sucursales ON sucursales.idSucursales = lugarTrabajo.idSucursales
-                                LEFT JOIN departamentos ON departamentos.idDepartamentos = lugarTrabajo.idDepartamentos");
+                                LEFT JOIN departamentos ON departamentos.idDepartamentos = lugarTrabajo.idDepartamentos
+                                ORDER BY usuarios;");
             foreach($req->fetchAll() as $usuario) {
                 $usuarios[] = $usuario;
             }
             
             return $usuarios;
-        }
-
-        public static function login($usuarios, $password) {
-            $db = Db::getInstance();
-            $select = $db->prepare('SELECT idUsuarios, idLugarTrabajo FROM usuarios WHERE usuarios=:usuarios AND password=:password');
-            $select->bindValue('usuarios', $usuarios);
-            $select->bindValue('password', $password);
-            $select->execute();
-            
-            $usuario = $select->fetch();
-            $user = new Usuarios($usuario['idUsuarios'], null, null, $usuario['idLugarTrabajo']);
-
-            return $user;
         }
 
         public static function crearUsuarios($usuarios) 
